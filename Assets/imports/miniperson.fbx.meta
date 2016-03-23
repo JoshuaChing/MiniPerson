@@ -32,6 +32,14 @@ ModelImporter:
     100048: pp
     100050: spine.lower
     100052: spine.upper
+    100054: Backpack
+    100056: Person
+    100058: Person_MeshPart0
+    100060: Person_MeshPart1
+    100062: Person_MeshPart2
+    100064: Person_MeshPart3
+    100066: Person_MeshPart4
+    100068: Cube.001
     400000: A.L.1
     400002: A.L.2
     400004: A.L.2_end
@@ -59,11 +67,28 @@ ModelImporter:
     400048: pp
     400050: spine.lower
     400052: spine.upper
+    400054: Backpack
+    400056: Person
+    400058: Person_MeshPart0
+    400060: Person_MeshPart1
+    400062: Person_MeshPart2
+    400064: Person_MeshPart3
+    400066: Person_MeshPart4
+    400068: Cube.001
+    2300000: Backpack
+    3300000: Backpack
     4300000: Cube_MeshPart0
     4300002: Cube_MeshPart1
     4300004: Cube_MeshPart2
     4300006: Cube_MeshPart3
     4300008: Cube_MeshPart4
+    4300010: Person_MeshPart0
+    4300012: Person_MeshPart1
+    4300014: Person_MeshPart2
+    4300016: Person_MeshPart3
+    4300018: Person_MeshPart4
+    4300020: Backpack
+    4300022: Cube.001
     7400000: Armature|Idle
     7400002: Armature|NoAction
     7400004: Armature|Walk
@@ -75,6 +100,13 @@ ModelImporter:
     13700004: Cube_MeshPart2
     13700006: Cube_MeshPart3
     13700008: Cube_MeshPart4
+    13700010: Person_MeshPart0
+    13700012: Person_MeshPart1
+    13700014: Person_MeshPart2
+    13700016: Person_MeshPart3
+    13700018: Person_MeshPart4
+    13700020: Cube.001
+    13700022: Backpack
   materials:
     importMaterials: 1
     materialName: 0
