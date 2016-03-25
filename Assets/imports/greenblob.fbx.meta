@@ -1,0 +1,145 @@
+fileFormatVersion: 2
+guid: 52b5241adb4c2b941a920f9551acdc4a
+timeCreated: 1458933832
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: A.L.1
+    100002: A.L.2
+    100004: A.L.2_end
+    100006: A.R.1
+    100008: A.R.2
+    100010: A.R.2_end
+    100012: Armature
+    100014: Cube
+    100016: Cube_MeshPart0
+    100018: Cube_MeshPart1
+    100020: Cube_MeshPart2
+    100022: Cube_MeshPart3
+    100024: Cube_MeshPart4
+    100026: //RootNode
+    100028: head
+    100030: head_end
+    100032: L.L.1
+    100034: L.L.2
+    100036: L.L.3
+    100038: L.L.3_end
+    100040: L.R.1
+    100042: L.R.2
+    100044: L.R.3
+    100046: L.R.3_end
+    100048: Plane
+    100050: pp
+    100052: spine.lower
+    100054: spine.upper
+    400000: A.L.1
+    400002: A.L.2
+    400004: A.L.2_end
+    400006: A.R.1
+    400008: A.R.2
+    400010: A.R.2_end
+    400012: Armature
+    400014: Cube
+    400016: Cube_MeshPart0
+    400018: Cube_MeshPart1
+    400020: Cube_MeshPart2
+    400022: Cube_MeshPart3
+    400024: Cube_MeshPart4
+    400026: //RootNode
+    400028: head
+    400030: head_end
+    400032: L.L.1
+    400034: L.L.2
+    400036: L.L.3
+    400038: L.L.3_end
+    400040: L.R.1
+    400042: L.R.2
+    400044: L.R.3
+    400046: L.R.3_end
+    400048: Plane
+    400050: pp
+    400052: spine.lower
+    400054: spine.upper
+    4300000: Cube_MeshPart0
+    4300002: Cube_MeshPart1
+    4300004: Cube_MeshPart2
+    4300006: Cube_MeshPart3
+    4300008: Cube_MeshPart4
+    4300010: Plane
+    7400000: Armature|Idle
+    7400002: Armature|NoAction
+    7400004: Armature|Walk
+    7400006: Cube|NoAction
+    7400008: Cube|Walk
+    9500000: //RootNode
+    13700000: Cube_MeshPart0
+    13700002: Cube_MeshPart1
+    13700004: Cube_MeshPart2
+    13700006: Cube_MeshPart3
+    13700008: Cube_MeshPart4
+    13700010: Plane
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
