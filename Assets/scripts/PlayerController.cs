@@ -30,6 +30,7 @@ public class PlayerController : MonoBehaviour {
 
     }
 
+    // Rotate character with mouse
     void RotateWithMouse()
     {
         Ray camRay = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -46,6 +47,7 @@ public class PlayerController : MonoBehaviour {
         }
     }
 
+    // Move character with keyboard
     void Move (float horizontal, float vertical)
     {
         movement.Set(horizontal, 0f, vertical);
@@ -53,8 +55,10 @@ public class PlayerController : MonoBehaviour {
         GetComponent<Rigidbody>().MovePosition(transform.position + movement);
     }
 
+    // Animate character
     void Animate(float horizontal, float vertical)
     {
         animator.SetBool("isWalking", (horizontal != 0 || vertical != 0) ? true : false);
     }
+
 }
