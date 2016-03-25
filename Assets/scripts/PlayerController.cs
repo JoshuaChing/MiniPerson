@@ -5,27 +5,56 @@ using UnityStandardAssets.CrossPlatformInput;
 public class PlayerController : MonoBehaviour {
 
     public float speed = 10.0F;
-    public float rotationSpeed = 100.0F;
-    public Animator animator;
+
+    Animator animator;
+    Vector3 movement;
+    float camRayLength = 100f;
 
 	// Use this for initialization
 	void Start () {
         animator = GetComponent<Animator>();
-	}
+    }
 	
+    void FixedUpdate()
+    {
+        float horizontal = CrossPlatformInputManager.GetAxisRaw("Horizontal");
+        float vertical = CrossPlatformInputManager.GetAxisRaw("Vertical");
+
+        RotateWithMouse();
+        Move(horizontal, vertical);
+        Animate(horizontal, vertical);
+    }
+
 	// Update is called once per frame
 	void Update () {
-        float translation = CrossPlatformInputManager.GetAxis("Vertical") * speed;
-        float rotation = CrossPlatformInputManager.GetAxis("Horizontal") * rotationSpeed;
 
-        translation *= Time.deltaTime;
-        rotation *= Time.deltaTime;
+    }
 
-        transform.Translate(0, 0, translation);
-        transform.Rotate(0, rotation, 0);
+    void RotateWithMouse()
+    {
+        Ray camRay = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-        //transform.Translate(rotation, 0, translation);
+        RaycastHit floorHit;
 
-        animator.SetBool("isWalking", (translation == 0) ? false : true);
-	}
+        if (Physics.Raycast(camRay, out floorHit, camRayLength))
+        {
+            Vector3 playerToMouse = floorHit.point - transform.position;
+            playerToMouse.y = 0f;
+
+            Quaternion newRotation = Quaternion.LookRotation(playerToMouse);
+            GetComponent<Rigidbody>().MoveRotation(newRotation);
+        }
+    }
+
+    void Move (float horizontal, float vertical)
+    {
+        movement.Set(horizontal, 0f, vertical);
+        movement = movement.normalized * speed * Time.deltaTime;
+        GetComponent<Rigidbody>().MovePosition(transform.position + movement);
+    }
+
+    void Animate(float horizontal, float vertical)
+    {
+        animator.SetBool("isWalking", (horizontal != 0 || vertical != 0) ? true : false);
+    }
 }
