@@ -99,7 +99,427 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Armature|Idle
+      takeName: Armature|Idle
+      firstFrame: 0
+      lastFrame: 72
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/pp
+        weight: 1
+      - path: Armature/pp/L.L.1
+        weight: 1
+      - path: Armature/pp/L.L.1/L.L.2
+        weight: 1
+      - path: Armature/pp/L.L.1/L.L.2/L.L.3
+        weight: 1
+      - path: Armature/pp/L.L.1/L.L.2/L.L.3/L.L.3_end
+        weight: 1
+      - path: Armature/pp/L.R.1
+        weight: 1
+      - path: Armature/pp/L.R.1/L.R.2
+        weight: 1
+      - path: Armature/pp/L.R.1/L.R.2/L.R.3
+        weight: 1
+      - path: Armature/pp/L.R.1/L.R.2/L.R.3/L.R.3_end
+        weight: 1
+      - path: Armature/pp/spine.lower
+        weight: 1
+      - path: Armature/pp/spine.lower/spine.upper
+        weight: 1
+      - path: Armature/pp/spine.lower/spine.upper/A.L.1
+        weight: 1
+      - path: Armature/pp/spine.lower/spine.upper/A.L.1/A.L.2
+        weight: 1
+      - path: Armature/pp/spine.lower/spine.upper/A.L.1/A.L.2/A.L.2_end
+        weight: 1
+      - path: Armature/pp/spine.lower/spine.upper/A.R.1
+        weight: 1
+      - path: Armature/pp/spine.lower/spine.upper/A.R.1/A.R.2
+        weight: 1
+      - path: Armature/pp/spine.lower/spine.upper/A.R.1/A.R.2/A.R.2_end
+        weight: 1
+      - path: Armature/pp/spine.lower/spine.upper/head
+        weight: 1
+      - path: Armature/pp/spine.lower/spine.upper/head/head_end
+        weight: 1
+      - path: Cube
+        weight: 1
+      - path: Cube/Cube_MeshPart0
+        weight: 1
+      - path: Cube/Cube_MeshPart1
+        weight: 1
+      - path: Cube/Cube_MeshPart2
+        weight: 1
+      - path: Cube/Cube_MeshPart3
+        weight: 1
+      - path: Cube/Cube_MeshPart4
+        weight: 1
+      - path: Plane
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|NoAction
+      takeName: Armature|NoAction
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/pp
+        weight: 1
+      - path: Armature/pp/L.L.1
+        weight: 1
+      - path: Armature/pp/L.L.1/L.L.2
+        weight: 1
+      - path: Armature/pp/L.L.1/L.L.2/L.L.3
+        weight: 1
+      - path: Armature/pp/L.L.1/L.L.2/L.L.3/L.L.3_end
+        weight: 1
+      - path: Armature/pp/L.R.1
+        weight: 1
+      - path: Armature/pp/L.R.1/L.R.2
+        weight: 1
+      - path: Armature/pp/L.R.1/L.R.2/L.R.3
+        weight: 1
+      - path: Armature/pp/L.R.1/L.R.2/L.R.3/L.R.3_end
+        weight: 1
+      - path: Armature/pp/spine.lower
+        weight: 1
+      - path: Armature/pp/spine.lower/spine.upper
+        weight: 1
+      - path: Armature/pp/spine.lower/spine.upper/A.L.1
+        weight: 1
+      - path: Armature/pp/spine.lower/spine.upper/A.L.1/A.L.2
+        weight: 1
+      - path: Armature/pp/spine.lower/spine.upper/A.L.1/A.L.2/A.L.2_end
+        weight: 1
+      - path: Armature/pp/spine.lower/spine.upper/A.R.1
+        weight: 1
+      - path: Armature/pp/spine.lower/spine.upper/A.R.1/A.R.2
+        weight: 1
+      - path: Armature/pp/spine.lower/spine.upper/A.R.1/A.R.2/A.R.2_end
+        weight: 1
+      - path: Armature/pp/spine.lower/spine.upper/head
+        weight: 1
+      - path: Armature/pp/spine.lower/spine.upper/head/head_end
+        weight: 1
+      - path: Cube
+        weight: 1
+      - path: Cube/Cube_MeshPart0
+        weight: 1
+      - path: Cube/Cube_MeshPart1
+        weight: 1
+      - path: Cube/Cube_MeshPart2
+        weight: 1
+      - path: Cube/Cube_MeshPart3
+        weight: 1
+      - path: Cube/Cube_MeshPart4
+        weight: 1
+      - path: Plane
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Walk
+      takeName: Armature|Walk
+      firstFrame: 0
+      lastFrame: 48
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/pp
+        weight: 1
+      - path: Armature/pp/L.L.1
+        weight: 1
+      - path: Armature/pp/L.L.1/L.L.2
+        weight: 1
+      - path: Armature/pp/L.L.1/L.L.2/L.L.3
+        weight: 1
+      - path: Armature/pp/L.L.1/L.L.2/L.L.3/L.L.3_end
+        weight: 1
+      - path: Armature/pp/L.R.1
+        weight: 1
+      - path: Armature/pp/L.R.1/L.R.2
+        weight: 1
+      - path: Armature/pp/L.R.1/L.R.2/L.R.3
+        weight: 1
+      - path: Armature/pp/L.R.1/L.R.2/L.R.3/L.R.3_end
+        weight: 1
+      - path: Armature/pp/spine.lower
+        weight: 1
+      - path: Armature/pp/spine.lower/spine.upper
+        weight: 1
+      - path: Armature/pp/spine.lower/spine.upper/A.L.1
+        weight: 1
+      - path: Armature/pp/spine.lower/spine.upper/A.L.1/A.L.2
+        weight: 1
+      - path: Armature/pp/spine.lower/spine.upper/A.L.1/A.L.2/A.L.2_end
+        weight: 1
+      - path: Armature/pp/spine.lower/spine.upper/A.R.1
+        weight: 1
+      - path: Armature/pp/spine.lower/spine.upper/A.R.1/A.R.2
+        weight: 1
+      - path: Armature/pp/spine.lower/spine.upper/A.R.1/A.R.2/A.R.2_end
+        weight: 1
+      - path: Armature/pp/spine.lower/spine.upper/head
+        weight: 1
+      - path: Armature/pp/spine.lower/spine.upper/head/head_end
+        weight: 1
+      - path: Cube
+        weight: 1
+      - path: Cube/Cube_MeshPart0
+        weight: 1
+      - path: Cube/Cube_MeshPart1
+        weight: 1
+      - path: Cube/Cube_MeshPart2
+        weight: 1
+      - path: Cube/Cube_MeshPart3
+        weight: 1
+      - path: Cube/Cube_MeshPart4
+        weight: 1
+      - path: Plane
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Cube|NoAction
+      takeName: Cube|NoAction
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/pp
+        weight: 1
+      - path: Armature/pp/L.L.1
+        weight: 1
+      - path: Armature/pp/L.L.1/L.L.2
+        weight: 1
+      - path: Armature/pp/L.L.1/L.L.2/L.L.3
+        weight: 1
+      - path: Armature/pp/L.L.1/L.L.2/L.L.3/L.L.3_end
+        weight: 1
+      - path: Armature/pp/L.R.1
+        weight: 1
+      - path: Armature/pp/L.R.1/L.R.2
+        weight: 1
+      - path: Armature/pp/L.R.1/L.R.2/L.R.3
+        weight: 1
+      - path: Armature/pp/L.R.1/L.R.2/L.R.3/L.R.3_end
+        weight: 1
+      - path: Armature/pp/spine.lower
+        weight: 1
+      - path: Armature/pp/spine.lower/spine.upper
+        weight: 1
+      - path: Armature/pp/spine.lower/spine.upper/A.L.1
+        weight: 1
+      - path: Armature/pp/spine.lower/spine.upper/A.L.1/A.L.2
+        weight: 1
+      - path: Armature/pp/spine.lower/spine.upper/A.L.1/A.L.2/A.L.2_end
+        weight: 1
+      - path: Armature/pp/spine.lower/spine.upper/A.R.1
+        weight: 1
+      - path: Armature/pp/spine.lower/spine.upper/A.R.1/A.R.2
+        weight: 1
+      - path: Armature/pp/spine.lower/spine.upper/A.R.1/A.R.2/A.R.2_end
+        weight: 1
+      - path: Armature/pp/spine.lower/spine.upper/head
+        weight: 1
+      - path: Armature/pp/spine.lower/spine.upper/head/head_end
+        weight: 1
+      - path: Cube
+        weight: 1
+      - path: Cube/Cube_MeshPart0
+        weight: 1
+      - path: Cube/Cube_MeshPart1
+        weight: 1
+      - path: Cube/Cube_MeshPart2
+        weight: 1
+      - path: Cube/Cube_MeshPart3
+        weight: 1
+      - path: Cube/Cube_MeshPart4
+        weight: 1
+      - path: Plane
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Cube|Walk
+      takeName: Cube|Walk
+      firstFrame: 0
+      lastFrame: 48
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/pp
+        weight: 1
+      - path: Armature/pp/L.L.1
+        weight: 1
+      - path: Armature/pp/L.L.1/L.L.2
+        weight: 1
+      - path: Armature/pp/L.L.1/L.L.2/L.L.3
+        weight: 1
+      - path: Armature/pp/L.L.1/L.L.2/L.L.3/L.L.3_end
+        weight: 1
+      - path: Armature/pp/L.R.1
+        weight: 1
+      - path: Armature/pp/L.R.1/L.R.2
+        weight: 1
+      - path: Armature/pp/L.R.1/L.R.2/L.R.3
+        weight: 1
+      - path: Armature/pp/L.R.1/L.R.2/L.R.3/L.R.3_end
+        weight: 1
+      - path: Armature/pp/spine.lower
+        weight: 1
+      - path: Armature/pp/spine.lower/spine.upper
+        weight: 1
+      - path: Armature/pp/spine.lower/spine.upper/A.L.1
+        weight: 1
+      - path: Armature/pp/spine.lower/spine.upper/A.L.1/A.L.2
+        weight: 1
+      - path: Armature/pp/spine.lower/spine.upper/A.L.1/A.L.2/A.L.2_end
+        weight: 1
+      - path: Armature/pp/spine.lower/spine.upper/A.R.1
+        weight: 1
+      - path: Armature/pp/spine.lower/spine.upper/A.R.1/A.R.2
+        weight: 1
+      - path: Armature/pp/spine.lower/spine.upper/A.R.1/A.R.2/A.R.2_end
+        weight: 1
+      - path: Armature/pp/spine.lower/spine.upper/head
+        weight: 1
+      - path: Armature/pp/spine.lower/spine.upper/head/head_end
+        weight: 1
+      - path: Cube
+        weight: 1
+      - path: Cube/Cube_MeshPart0
+        weight: 1
+      - path: Cube/Cube_MeshPart1
+        weight: 1
+      - path: Cube/Cube_MeshPart2
+        weight: 1
+      - path: Cube/Cube_MeshPart3
+        weight: 1
+      - path: Cube/Cube_MeshPart4
+        weight: 1
+      - path: Plane
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
