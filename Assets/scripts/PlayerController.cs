@@ -10,6 +10,8 @@ public class PlayerController : MonoBehaviour {
     Vector3 movement;
     float camRayLength = 100f;
 
+    bool attackTriggered;
+
 	// Use this for initialization
 	void Start () {
         animator = GetComponent<Animator>();
@@ -20,9 +22,10 @@ public class PlayerController : MonoBehaviour {
         float horizontal = CrossPlatformInputManager.GetAxisRaw("Horizontal");
         float vertical = CrossPlatformInputManager.GetAxisRaw("Vertical");
 
+        HandleInput();
+        HandleMovement(horizontal, vertical);
+        HandleAnimation(horizontal, vertical);
         RotateWithMouse();
-        Move(horizontal, vertical);
-        Animate(horizontal, vertical);
     }
 
 	// Update is called once per frame
@@ -33,6 +36,11 @@ public class PlayerController : MonoBehaviour {
     // Rotate character with mouse
     void RotateWithMouse()
     {
+        if (this.animator.GetCurrentAnimatorStateInfo(0).IsTag("Attack"))
+        {
+            return;
+        }
+
         Ray camRay = Camera.main.ScreenPointToRay(Input.mousePosition);
 
         RaycastHit floorHit;
@@ -48,7 +56,7 @@ public class PlayerController : MonoBehaviour {
     }
 
     // Move character with keyboard
-    void Move (float horizontal, float vertical)
+    void HandleMovement (float horizontal, float vertical)
     {
         movement.Set(horizontal, 0f, vertical);
         movement = movement.normalized * speed * Time.deltaTime;
@@ -56,9 +64,26 @@ public class PlayerController : MonoBehaviour {
     }
 
     // Animate character
-    void Animate(float horizontal, float vertical)
+    void HandleAnimation(float horizontal, float vertical)
     {
-        animator.SetBool("isWalking", (horizontal != 0 || vertical != 0) ? true : false);
+        if (attackTriggered)
+        {
+            animator.SetTrigger("Attack");
+            attackTriggered = false;
+        }
+        else {
+            animator.SetBool("isWalking", (horizontal != 0 || vertical != 0) ? true : false);
+        }
+    }
+
+    // Handle input
+    void HandleInput()
+    {
+        // left click
+        if (Input.GetMouseButtonDown(0))
+        {
+            attackTriggered = true;
+        }
     }
 
 }
