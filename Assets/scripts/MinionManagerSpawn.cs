@@ -6,7 +6,7 @@ public class MinionManagerSpawn : MonoBehaviour {
     public GameObject[] greenMinions;
     public int greenMinionsCount;
     public Vector3 greenMinionsSpawnPoint;
-    private int greenMinionsMax = 20;
+    public int greenMinionsMax = 20;
 
 	// Use this for initialization
 	void Start () {
@@ -24,14 +24,14 @@ public class MinionManagerSpawn : MonoBehaviour {
         greenMinionsCount = greenMinions.Length;
 
         if (greenMinionsCount < greenMinionsMax) {
-            InvokeRepeating("SpawnMinion", 3f, 10f);
+            InvokeRepeating("SpawnMinion", 1f, 3f);
         }
     }
 
     void SpawnMinion()
     {
         greenMinionsSpawnPoint.x = 0;
-        greenMinionsSpawnPoint.y = 3;
+        greenMinionsSpawnPoint.y = 10;
         greenMinionsSpawnPoint.z = 0;
 
         Instantiate(greenMinions[0], greenMinionsSpawnPoint, Quaternion.identity);

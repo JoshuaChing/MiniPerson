@@ -15,6 +15,7 @@ public class CameraController : MonoBehaviour {
 
     // setting 1: 0,20,-40,25,0,0
     // setting 2: 0,30,-60,25,0,0
+    // setting 3: 0,40,-80,25,0,0
 
     void LateUpdate()
     {
