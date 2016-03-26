@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour {
     float camRayLength = 100f;
 
     bool attackTriggered;
+    public GameObject sword;
 
 	// Use this for initialization
 	void Start () {
@@ -55,6 +56,16 @@ public class PlayerController : MonoBehaviour {
         }
     }
 
+    // Handle input
+    void HandleInput()
+    {
+        // left click
+        if (Input.GetMouseButtonDown(0))
+        {
+            attackTriggered = true;
+        }
+    }
+
     // Move character with keyboard
     void HandleMovement (float horizontal, float vertical)
     {
@@ -66,6 +77,8 @@ public class PlayerController : MonoBehaviour {
     // Animate character
     void HandleAnimation(float horizontal, float vertical)
     {
+        HandleSwordPosition();
+
         if (attackTriggered)
         {
             animator.SetTrigger("Attack");
@@ -76,14 +89,24 @@ public class PlayerController : MonoBehaviour {
         }
     }
 
-    // Handle input
-    void HandleInput()
+    // Handle sword position
+    void HandleSwordPosition()
     {
-        // left click
-        if (Input.GetMouseButtonDown(0))
+        Quaternion newRotation;
+        Vector3 newPosition;
+
+        if (animator.GetCurrentAnimatorStateInfo(0).IsTag("Attack"))
         {
-            attackTriggered = true;
+            newRotation = Quaternion.Euler(-5.232f, 268.37f, 326.67f);
+            newPosition = new Vector3(-0.00075f, -0.01963f, -0.01194f);
+        } else
+        {
+            newRotation = Quaternion.Euler(331.4513f, 214.6951f, 71.69279f);
+            newPosition = new Vector3(-0.007f, -0.01508f, -0.00483f);
         }
+
+        sword.transform.localRotation = newRotation;
+        sword.transform.localPosition = newPosition;
     }
 
 }
