@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: a6021390d21f6f24e8b556d83c54ad01
-timeCreated: 1458513457
+timeCreated: 1459021562
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -12,34 +12,25 @@ ModelImporter:
     100008: A.R.2
     100010: A.R.2_end
     100012: Armature
-    100014: Cube
-    100016: Cube_MeshPart0
-    100018: Cube_MeshPart1
-    100020: Cube_MeshPart2
-    100022: Cube_MeshPart3
-    100024: Cube_MeshPart4
-    100026: head
-    100028: head_end
-    100030: L.L.1
-    100032: L.L.2
-    100034: L.L.3
-    100036: L.L.3_end
-    100038: L.R.1
-    100040: L.R.2
-    100042: L.R.3
-    100044: L.R.3_end
-    100046: //RootNode
-    100048: pp
-    100050: spine.lower
-    100052: spine.upper
-    100054: Backpack
-    100056: Person
-    100058: Person_MeshPart0
-    100060: Person_MeshPart1
-    100062: Person_MeshPart2
-    100064: Person_MeshPart3
-    100066: Person_MeshPart4
-    100068: Cube.001
+    100014: Backpack
+    100016: head
+    100018: head_end
+    100020: L.L.1
+    100022: L.L.2
+    100024: L.L.3
+    100026: L.L.3_end
+    100028: L.R.1
+    100030: L.R.2
+    100032: L.R.3
+    100034: L.R.3_end
+    100036: //RootNode
+    100038: Person
+    100040: Person_MeshPart0
+    100042: Person_MeshPart1
+    100044: Person_MeshPart2
+    100046: pp
+    100048: spine.lower
+    100050: spine.upper
     400000: A.L.1
     400002: A.L.2
     400004: A.L.2_end
@@ -47,66 +38,38 @@ ModelImporter:
     400008: A.R.2
     400010: A.R.2_end
     400012: Armature
-    400014: Cube
-    400016: Cube_MeshPart0
-    400018: Cube_MeshPart1
-    400020: Cube_MeshPart2
-    400022: Cube_MeshPart3
-    400024: Cube_MeshPart4
-    400026: head
-    400028: head_end
-    400030: L.L.1
-    400032: L.L.2
-    400034: L.L.3
-    400036: L.L.3_end
-    400038: L.R.1
-    400040: L.R.2
-    400042: L.R.3
-    400044: L.R.3_end
-    400046: //RootNode
-    400048: pp
-    400050: spine.lower
-    400052: spine.upper
-    400054: Backpack
-    400056: Person
-    400058: Person_MeshPart0
-    400060: Person_MeshPart1
-    400062: Person_MeshPart2
-    400064: Person_MeshPart3
-    400066: Person_MeshPart4
-    400068: Cube.001
-    2300000: Backpack
-    3300000: Backpack
-    4300000: Cube_MeshPart0
-    4300002: Cube_MeshPart1
-    4300004: Cube_MeshPart2
-    4300006: Cube_MeshPart3
-    4300008: Cube_MeshPart4
-    4300010: Person_MeshPart0
-    4300012: Person_MeshPart1
-    4300014: Person_MeshPart2
-    4300016: Person_MeshPart3
-    4300018: Person_MeshPart4
-    4300020: Backpack
-    4300022: Cube.001
+    400014: Backpack
+    400016: head
+    400018: head_end
+    400020: L.L.1
+    400022: L.L.2
+    400024: L.L.3
+    400026: L.L.3_end
+    400028: L.R.1
+    400030: L.R.2
+    400032: L.R.3
+    400034: L.R.3_end
+    400036: //RootNode
+    400038: Person
+    400040: Person_MeshPart0
+    400042: Person_MeshPart1
+    400044: Person_MeshPart2
+    400046: pp
+    400048: spine.lower
+    400050: spine.upper
+    4300000: Backpack
+    4300002: Person_MeshPart0
+    4300004: Person_MeshPart1
+    4300006: Person_MeshPart2
     7400000: Armature|Idle
-    7400002: Armature|NoAction
+    7400002: Armature|SpinAttack
     7400004: Armature|Walk
-    7400006: Cube|Idle
-    7400008: Cube|NoAction
+    7400006: Person|Idle
     9500000: //RootNode
-    13700000: Cube_MeshPart0
-    13700002: Cube_MeshPart1
-    13700004: Cube_MeshPart2
-    13700006: Cube_MeshPart3
-    13700008: Cube_MeshPart4
-    13700010: Person_MeshPart0
-    13700012: Person_MeshPart1
-    13700014: Person_MeshPart2
-    13700016: Person_MeshPart3
-    13700018: Person_MeshPart4
-    13700020: Cube.001
-    13700022: Backpack
+    13700000: Backpack
+    13700002: Person_MeshPart0
+    13700004: Person_MeshPart1
+    13700006: Person_MeshPart2
   materials:
     importMaterials: 1
     materialName: 0
@@ -195,26 +158,24 @@ ModelImporter:
         weight: 1
       - path: Armature/pp/spine.lower/spine.upper/head/head_end
         weight: 1
-      - path: Cube
+      - path: Backpack
         weight: 1
-      - path: Cube/Cube_MeshPart0
+      - path: Person
         weight: 1
-      - path: Cube/Cube_MeshPart1
+      - path: Person/Person_MeshPart0
         weight: 1
-      - path: Cube/Cube_MeshPart2
+      - path: Person/Person_MeshPart1
         weight: 1
-      - path: Cube/Cube_MeshPart3
-        weight: 1
-      - path: Cube/Cube_MeshPart4
+      - path: Person/Person_MeshPart2
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Armature|NoAction
-      takeName: Armature|NoAction
+      name: Armature|SpinAttack
+      takeName: Armature|SpinAttack
       firstFrame: 0
-      lastFrame: 1
+      lastFrame: 24
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -277,17 +238,15 @@ ModelImporter:
         weight: 1
       - path: Armature/pp/spine.lower/spine.upper/head/head_end
         weight: 1
-      - path: Cube
+      - path: Backpack
         weight: 1
-      - path: Cube/Cube_MeshPart0
+      - path: Person
         weight: 1
-      - path: Cube/Cube_MeshPart1
+      - path: Person/Person_MeshPart0
         weight: 1
-      - path: Cube/Cube_MeshPart2
+      - path: Person/Person_MeshPart1
         weight: 1
-      - path: Cube/Cube_MeshPart3
-        weight: 1
-      - path: Cube/Cube_MeshPart4
+      - path: Person/Person_MeshPart2
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
@@ -359,24 +318,22 @@ ModelImporter:
         weight: 1
       - path: Armature/pp/spine.lower/spine.upper/head/head_end
         weight: 1
-      - path: Cube
+      - path: Backpack
         weight: 1
-      - path: Cube/Cube_MeshPart0
+      - path: Person
         weight: 1
-      - path: Cube/Cube_MeshPart1
+      - path: Person/Person_MeshPart0
         weight: 1
-      - path: Cube/Cube_MeshPart2
+      - path: Person/Person_MeshPart1
         weight: 1
-      - path: Cube/Cube_MeshPart3
-        weight: 1
-      - path: Cube/Cube_MeshPart4
+      - path: Person/Person_MeshPart2
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Cube|Idle
-      takeName: Cube|Idle
+      name: Person|Idle
+      takeName: Person|Idle
       firstFrame: 0
       lastFrame: 72
       wrapMode: 0
@@ -441,99 +398,15 @@ ModelImporter:
         weight: 1
       - path: Armature/pp/spine.lower/spine.upper/head/head_end
         weight: 1
-      - path: Cube
+      - path: Backpack
         weight: 1
-      - path: Cube/Cube_MeshPart0
+      - path: Person
         weight: 1
-      - path: Cube/Cube_MeshPart1
+      - path: Person/Person_MeshPart0
         weight: 1
-      - path: Cube/Cube_MeshPart2
+      - path: Person/Person_MeshPart1
         weight: 1
-      - path: Cube/Cube_MeshPart3
-        weight: 1
-      - path: Cube/Cube_MeshPart4
-        weight: 1
-      maskType: 0
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: Cube|NoAction
-      takeName: Cube|NoAction
-      firstFrame: 0
-      lastFrame: 1
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask:
-      - path: 
-        weight: 1
-      - path: Armature
-        weight: 1
-      - path: Armature/pp
-        weight: 1
-      - path: Armature/pp/L.L.1
-        weight: 1
-      - path: Armature/pp/L.L.1/L.L.2
-        weight: 1
-      - path: Armature/pp/L.L.1/L.L.2/L.L.3
-        weight: 1
-      - path: Armature/pp/L.L.1/L.L.2/L.L.3/L.L.3_end
-        weight: 1
-      - path: Armature/pp/L.R.1
-        weight: 1
-      - path: Armature/pp/L.R.1/L.R.2
-        weight: 1
-      - path: Armature/pp/L.R.1/L.R.2/L.R.3
-        weight: 1
-      - path: Armature/pp/L.R.1/L.R.2/L.R.3/L.R.3_end
-        weight: 1
-      - path: Armature/pp/spine.lower
-        weight: 1
-      - path: Armature/pp/spine.lower/spine.upper
-        weight: 1
-      - path: Armature/pp/spine.lower/spine.upper/A.L.1
-        weight: 1
-      - path: Armature/pp/spine.lower/spine.upper/A.L.1/A.L.2
-        weight: 1
-      - path: Armature/pp/spine.lower/spine.upper/A.L.1/A.L.2/A.L.2_end
-        weight: 1
-      - path: Armature/pp/spine.lower/spine.upper/A.R.1
-        weight: 1
-      - path: Armature/pp/spine.lower/spine.upper/A.R.1/A.R.2
-        weight: 1
-      - path: Armature/pp/spine.lower/spine.upper/A.R.1/A.R.2/A.R.2_end
-        weight: 1
-      - path: Armature/pp/spine.lower/spine.upper/head
-        weight: 1
-      - path: Armature/pp/spine.lower/spine.upper/head/head_end
-        weight: 1
-      - path: Cube
-        weight: 1
-      - path: Cube/Cube_MeshPart0
-        weight: 1
-      - path: Cube/Cube_MeshPart1
-        weight: 1
-      - path: Cube/Cube_MeshPart2
-        weight: 1
-      - path: Cube/Cube_MeshPart3
-        weight: 1
-      - path: Cube/Cube_MeshPart4
+      - path: Person/Person_MeshPart2
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
