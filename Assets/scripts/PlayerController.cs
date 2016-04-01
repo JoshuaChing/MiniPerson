@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour {
         HandleInput();
         HandleMovement(horizontal, vertical);
         HandleAnimation(horizontal, vertical);
-        //RotateWithMouse();
+        RotateWithMouse();
     }
 
 	// Update is called once per frame
@@ -37,6 +37,11 @@ public class PlayerController : MonoBehaviour {
     // Rotate character with mouse
     void RotateWithMouse()
     {
+        if (!CameraController.followCameraActive)
+        {
+            return;
+        }
+
         if (this.animator.GetCurrentAnimatorStateInfo(0).IsTag("Attack"))
         {
             return;
@@ -69,14 +74,34 @@ public class PlayerController : MonoBehaviour {
     // Move character with keyboard
     void HandleMovement (float horizontal, float vertical)
     {
-        movement.Set(horizontal, 0f, vertical);
-        movement = movement.normalized * speed * Time.deltaTime;
+        if (CameraController.followCameraActive)
+        {
+            movement.Set(horizontal, 0f, vertical);
+            movement = movement.normalized;
+        }
+        else
+        {
+            movement.Set(0f, 0f, 0f);
+            if (vertical > 0)
+            {
+                movement = transform.forward.normalized; 
+            } else if (vertical < 0)
+            {
+                movement -= transform.forward.normalized;
+            }
+        }
+        movement = movement * speed * Time.deltaTime;
         GetComponent<Rigidbody>().MovePosition(transform.position + movement);
     }
 
     // Animate character
     void HandleAnimation(float horizontal, float vertical)
     {
+        if (!CameraController.followCameraActive)
+        {
+            horizontal = 0f;
+        }
+
         HandleSwordPosition();
 
         if (attackTriggered)

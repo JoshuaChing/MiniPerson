@@ -11,7 +11,7 @@ public class CameraController : MonoBehaviour {
     public float cameraRotX = 25f;
     public float cameraRotY = 0f;
     public float cameraRotZ = 0f;
-    public bool followCameraActive = true;
+    public static bool followCameraActive = true;
 
     // mouse aim camera variables
     public float rotateSpeed = 5;
@@ -54,7 +54,7 @@ public class CameraController : MonoBehaviour {
 
     void HandleInput()
     {
-        if (Input.GetKeyDown(KeyCode.P)) {
+        if (Input.GetKeyDown(KeyCode.Y)) {
             if (followCameraActive)
             {
                 // set mouse aim settings
