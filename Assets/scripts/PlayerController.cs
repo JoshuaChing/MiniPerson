@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour {
         HandleInput();
         HandleMovement(horizontal, vertical);
         HandleAnimation(horizontal, vertical);
-        RotateWithMouse();
+        //RotateWithMouse();
     }
 
 	// Update is called once per frame
